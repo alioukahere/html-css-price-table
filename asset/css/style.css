@@ -15,16 +15,16 @@ body {
 
 .prices-box {
 	padding-top: 30px;
-	width: 100%;
+	width: 950px;
 	margin: auto;
 }
 
 .price {
-	width: 250px;
+	width: 23%;
 	text-align: center;
 	float: left;
 	background-color: #00cc99;
-	margin: 0px 10px 0px 10px;
+	margin: 0 1%;
 }
 
 .price-header {
@@ -54,7 +54,8 @@ body {
 	line-height: 3.5em;
 	white-space: nowrap;
 	display: block;
-	border-bottom: 1px solid #000;
+	border-bottom: 2px solid #b2ffff;
+	font-size: 0.9em;
 }
 
 .price-body span {
@@ -63,7 +64,7 @@ body {
 }
 
 .simple, .standard, .unlimited {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .super {
@@ -83,7 +84,7 @@ body {
 	color: #fff;
 	height: 2em;
 	line-height: 2em;
-	width: 80%;
+	width: 90%;
 	font-size: 1.5em;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -92,4 +93,20 @@ body {
 .btn-price:hover {
 	background-color: rgba(255, 168, 18, 0.9);
 	color: #000;
+}
+
+@media (max-width: 700px) {
+	.prices-box {
+		width: 80%;
+		margin: auto;
+	}
+
+	.price {
+		float: none;
+		width: 100%;
+	}
+
+	.btn-price {
+		margin-bottom: 10px;
+	}
 }
